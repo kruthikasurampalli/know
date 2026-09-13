@@ -1,0 +1,167 @@
+{
+  "DateOfBirth": "1995-05-15",
+  "DateOfBirthWithTime": "1995-05-15T10:30:00",
+
+  "FirstName": "Alex",
+  "LastName": "Developer",
+  "FullName": "Alex Developer",
+
+  "ProfilePicture": "https://avatars.githubusercontent.com/alexdeveloper?size=400",
+
+  "Address": "456 Tech Street, San Francisco, California, USA",
+  "City": "San Francisco",
+  "Country": "USA",
+  "PostalCode": "94105",
+
+  "Email": "alex.developer@example.com",
+  "PhoneNumber": "+1-555-123-4567",
+
+  "About": "Full-stack developer passionate about building scalable web applications and contributing to open-source projects. Love learning new technologies and teaching others.",
+
+  "Education": [
+    {
+      "Degree": "Bachelor of Computer Science",
+      "FieldOfStudy": "Computer Science",
+      "Institute": "Tech University",
+      "UniversityOrBoard": "State University System",
+      "StartYear": "2017",
+      "EndYear": "2021",
+      "Location": "San Francisco, California",
+      "GraduationYear": "2021"
+    },
+    {
+      "Degree": "High School Diploma",
+      "FieldOfStudy": "General Education",
+      "Institute": "Central High School",
+      "UniversityOrBoard": "State Board of Education",
+      "StartYear": "2013",
+      "EndYear": "2017",
+      "Location": "Oakland, California",
+      "GraduationYear": "2017"
+    }
+  ],
+
+  "Skills": [
+    {
+      "category": "Frontend",
+      "skills": ["React", "Vue.js", "JavaScript", "TypeScript", "CSS", "HTML"]
+    },
+    {
+      "category": "Backend",
+      "skills": ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"]
+    },
+    {
+      "category": "DevOps",
+      "skills": ["Docker", "Kubernetes", "CI/CD", "GitHub Actions", "AWS", "GCP"]
+    },
+    {
+      "category": "Tools",
+      "skills": ["Git", "Vite", "Webpack", "Jest", "Figma"]
+    }
+  ],
+
+  "Projects": [
+    {
+      "Name": "Real-time Chat Application",
+      "Description": "Built a real-time chat application with WebSocket support and message persistence.",
+      "Technologies": ["React", "Node.js", "Socket.io", "MongoDB"],
+      "Link": "https://github.com/alexdeveloper/realtime-chat-app"
+    },
+    {
+      "Name": "Task Management Dashboard",
+      "Description": "Created a collaborative task management tool with real-time updates and team workspaces.",
+      "Technologies": ["React", "TypeScript", "Firebase", "Tailwind CSS"],
+      "Link": "https://github.com/alexdeveloper/task-dashboard"
+    },
+    {
+      "Name": "Open Source Contributions",
+      "Description": "Active contributor to several open-source projects including bug fixes and feature implementations.",
+      "Technologies": ["React", "Vue.js", "Python"],
+      "Link": "https://github.com/alexdeveloper"
+    }
+  ],
+
+  "Experience": [
+    {
+      "Role": "Senior Frontend Engineer",
+      "Company": "Tech Corp Inc.",
+      "StartYear": "2022",
+      "EndYear": "present",
+      "Location": "San Francisco, California",
+      "Description": "Lead frontend development for customer-facing applications. Mentoring junior developers and implementing modern React patterns. Improved application performance by 40%."
+    },
+    {
+      "Role": "Full Stack Developer",
+      "Company": "StartUp Labs",
+      "StartYear": "2021",
+      "EndYear": "2022",
+      "Location": "San Francisco, California",
+      "Description": "Built and maintained full-stack applications using MERN stack. Designed database schemas and implemented REST APIs. Deployed applications to AWS."
+    },
+    {
+      "Role": "Junior Developer Intern",
+      "Company": "Web Solutions Ltd.",
+      "StartYear": "2020",
+      "EndYear": "2021",
+      "Location": "San Francisco, California",
+      "Description": "Developed features for web applications using React and JavaScript. Participated in code reviews and learned best practices."
+    }
+  ],
+
+  "Certifications": [
+    {
+      "Name": "AWS Certified Solutions Architect",
+      "IssuingOrganization": "Amazon Web Services",
+      "IssueDate": "2023-06",
+      "ExpirationDate": "2026-06",
+      "CredentialID": "AWS-SA-2023-001"
+    },
+    {
+      "Name": "Kubernetes Application Developer",
+      "IssuingOrganization": "Cloud Native Computing Foundation",
+      "IssueDate": "2022-09",
+      "ExpirationDate": "2025-09",
+      "CredentialID": "CKAD-2022-001"
+    }
+  ],
+
+  "Awards": [
+    {
+      "Name": "Developer of the Year",
+      "IssuingOrganization": "Tech Corp Inc.",
+      "IssueDate": "2023-12"
+    },
+    {
+      "Name": "Open Source Contributor Award",
+      "IssuingOrganization": "Community Tech Foundation",
+      "IssueDate": "2023-09"
+    }
+  ],
+
+  "Hobbies": [
+    "Contributing to open-source projects",
+    "Writing technical blog posts",
+    "Attending tech meetups and conferences",
+    "Playing chess",
+    "Hiking"
+  ],
+
+  "Languages": [
+    "English",
+    "Spanish",
+    "Mandarin Chinese"
+  ],
+
+  "References": [
+    {
+      "Name": "Jane Manager",
+      "Relationship": "Former Team Lead",
+      "Contact": "jane.manager@techcorp.com"
+    },
+    {
+      "Name": "Dr. James Professor",
+      "Relationship": "University Professor",
+      "Contact": "j.professor@techuniversity.edu"
+    }
+  ]
+}

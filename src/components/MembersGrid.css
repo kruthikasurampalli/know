@@ -1,0 +1,244 @@
+/* Members Grid Container */
+#membersGrid {
+  padding: var(--sp-8) var(--sp-4);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.members-header {
+  text-align: center;
+  margin-bottom: var(--sp-12);
+}
+
+.members-header h2 {
+  font-size: var(--text-4xl);
+  margin: 0 0 var(--sp-3) 0;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.members-header p {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: var(--lh-relaxed);
+}
+
+/* Members Container Grid */
+.members-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--sp-6);
+  margin-top: var(--sp-8);
+}
+
+/* Member Card */
+.member-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  box-shadow: var(--shadow-xs);
+}
+
+.member-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+  background: var(--bg-tertiary);
+}
+
+.member-card:active {
+  transform: translateY(-3px);
+}
+
+.member-card:focus-within {
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+/* Member Image */
+.member-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.member-card:hover .member-image {
+  transform: scale(1.05);
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  font-size: var(--text-4xl);
+  color: var(--bg);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+/* Member Info */
+.member-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.member-info h3 {
+  margin: 0;
+  font-size: var(--text-xl);
+  color: var(--text);
+  word-break: break-word;
+  font-weight: 600;
+  line-height: var(--lh-normal);
+}
+
+.member-title {
+  margin: 0;
+  font-size: var(--text-base);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.member-username {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+}
+
+/* Member Action */
+.member-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--border);
+  color: var(--accent);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  font-size: var(--text-base);
+}
+
+.member-card:hover .member-action {
+  color: var(--accent-hover);
+  transform: translateX(4px);
+}
+
+.member-action:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #membersGrid {
+    padding: var(--sp-6) var(--sp-3);
+  }
+
+  .members-header h2 {
+    font-size: var(--text-3xl);
+  }
+
+  .members-header p {
+    font-size: var(--text-base);
+  }
+
+  .members-container {
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+    margin-top: var(--sp-6);
+  }
+
+  .member-card {
+    padding: var(--sp-4);
+    flex-direction: row;
+    align-items: center;
+    gap: var(--sp-4);
+  }
+
+  .member-image {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: var(--radius-full);
+  }
+
+  .avatar-placeholder {
+    font-size: var(--text-3xl);
+  }
+
+  .member-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .member-info h3 {
+    font-size: var(--text-lg);
+    margin-bottom: 0;
+  }
+
+  .member-action {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #membersGrid {
+    padding: var(--sp-4) var(--sp-2);
+  }
+
+  .members-header h2 {
+    font-size: var(--text-2xl);
+  }
+
+  .members-container {
+    gap: var(--sp-3);
+    margin-top: var(--sp-4);
+  }
+
+  .member-card {
+    padding: var(--sp-3);
+    gap: var(--sp-3);
+  }
+
+  .member-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .avatar-placeholder {
+    font-size: var(--text-2xl);
+  }
+
+  .member-info h3 {
+    font-size: var(--text-base);
+  }
+
+  .member-title {
+    font-size: var(--text-sm);
+  }
+}
+
+  .member-username {
+    font-size: 0.75rem;
+  }
+}

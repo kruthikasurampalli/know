@@ -1,0 +1,98 @@
+{
+  "DateOfBirth": "YYYY-MM-DD",
+  "DateOfBirthWithTime": "YYYY-MM-DDTHH:MM:SS",
+
+  "FirstName": "Your First Name",
+  "LastName": "Your Last Name",
+  "FullName": "Your Full Name",
+
+  "ProfilePicture": "https://avatars.githubusercontent.com/yourusername?size=400",
+
+  "Address": "Street Address, City, State/Province, Country",
+  "City": "City",
+  "Country": "Country",
+  "PostalCode": "00000",
+
+  "Email": "your.email@example.com",
+  "PhoneNumber": "+1-234-567-8900",
+
+  "About": "Brief bio about yourself and your interests in web development.",
+
+  "Education": [
+    {
+      "Degree": "Degree Name",
+      "FieldOfStudy": "Field of Study",
+      "Institute": "Institution Name",
+      "UniversityOrBoard": "University/Board Name",
+      "StartYear": "2020",
+      "EndYear": "2024",
+      "Location": "City, State/Province",
+      "GraduationYear": "2024"
+    }
+  ],
+
+  "Skills": [
+    {
+      "category": "Category Name",
+      "skills": ["Skill 1", "Skill 2", "Skill 3"]
+    }
+  ],
+
+  "Projects": [
+    {
+      "Name": "Project Name",
+      "Description": "Brief description of the project.",
+      "Technologies": ["Tech 1", "Tech 2", "Tech 3"],
+      "Link": "https://github.com/yourusername/project-name"
+    }
+  ],
+
+  "Experience": [
+    {
+      "Role": "Job Title",
+      "Company": "Company Name",
+      "StartYear": "2023",
+      "EndYear": "present",
+      "Location": "City, State/Province",
+      "Description": "Brief description of your responsibilities and achievements."
+    }
+  ],
+
+  "Certifications": [
+    {
+      "Name": "Certification Name",
+      "IssuingOrganization": "Organization Name",
+      "IssueDate": "YYYY-MM",
+      "ExpirationDate": "YYYY-MM",
+      "CredentialID": "CREDENTIAL-ID-123"
+    }
+  ],
+
+  "Awards": [
+    {
+      "Name": "Award Name",
+      "IssuingOrganization": "Organization Name",
+      "IssueDate": "YYYY-MM"
+    }
+  ],
+
+  "Hobbies": [
+    "Hobby 1",
+    "Hobby 2",
+    "Hobby 3"
+  ],
+
+  "Languages": [
+    "Language 1",
+    "Language 2",
+    "Language 3"
+  ],
+
+  "References": [
+    {
+      "Name": "Reference Name",
+      "Relationship": "Relationship (e.g., Manager, Professor)",
+      "Contact": "email@example.com"
+    }
+  ]
+}

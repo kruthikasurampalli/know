@@ -1,0 +1,322 @@
+/* Members Page Styling */
+
+.members-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.members-header .header-wrapper {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.members-header .header-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--sp-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.members-header .header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.members-header .logo-text {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.5px;
+  user-select: none;
+}
+
+.members-header .header-actions {
+  display: flex;
+  gap: var(--sp-2);
+  align-items: center;
+}
+
+.members-header .header-btn {
+  background: none;
+  border: 1px solid var(--border);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  color: var(--text);
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.members-header .header-btn:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Members Main Content */
+.members-main {
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+  padding: var(--sp-8) var(--sp-4);
+  background-color: var(--bg);
+}
+
+/* Members Section */
+.members-section {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.members-header-content {
+  text-align: center;
+  margin-bottom: var(--sp-8);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.members-title {
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: var(--sp-2);
+  letter-spacing: -1px;
+}
+
+.members-subtitle {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Members Grid */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--sp-6);
+  animation: fadeInUp 0.8s ease-out 0.1s backwards;
+}
+
+.member-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.member-card:hover {
+  border-color: var(--accent);
+  background-color: var(--bg);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.member-image-wrapper {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: var(--sp-4);
+  border: 3px solid var(--accent);
+  transition: all var(--transition-base);
+  flex-shrink: 0;
+}
+
+.member-card:hover .member-image-wrapper {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.1);
+}
+
+.member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-content {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.member-name {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: var(--sp-1);
+}
+
+.member-handle {
+  font-size: var(--text-sm);
+  color: var(--accent);
+  margin-bottom: var(--sp-3);
+  font-weight: 500;
+}
+
+.member-about {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--lh-relaxed);
+  margin: 0 0 var(--sp-3) 0;
+  flex-grow: 1;
+}
+
+.view-profile-link {
+  font-size: var(--text-sm);
+  color: var(--accent);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-top: auto;
+}
+
+.member-card:hover .view-profile-link {
+  background-color: rgba(37, 99, 235, 0.1);
+  transform: translateX(4px);
+}
+
+/* No Members State */
+.no-members {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--sp-8);
+}
+
+.no-members p {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+  .members-main {
+    padding: var(--sp-6) var(--sp-3);
+    margin-top: 60px;
+  }
+
+  .members-header-content {
+    margin-bottom: var(--sp-6);
+  }
+
+  .members-title {
+    font-size: var(--text-3xl);
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--sp-4);
+  }
+
+  .member-card {
+    padding: var(--sp-4);
+  }
+
+  .member-image-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+
+  .members-header .header-btn {
+    padding: var(--sp-2) var(--sp-2);
+    font-size: var(--text-xs);
+  }
+
+  .members-header .header-btn:first-of-type {
+    display: none;
+  }
+}
+
+/* Mobile (480px) */
+@media (max-width: 480px) {
+  .members-main {
+    padding: var(--sp-4) var(--sp-2);
+    margin-top: 60px;
+  }
+
+  .members-header-content {
+    margin-bottom: var(--sp-4);
+  }
+
+  .members-title {
+    font-size: var(--text-2xl);
+  }
+
+  .members-subtitle {
+    font-size: var(--text-sm);
+  }
+
+  .members-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-3);
+  }
+
+  .member-card {
+    padding: var(--sp-3);
+  }
+
+  .member-image-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .member-name {
+    font-size: var(--text-base);
+  }
+
+  .member-handle {
+    font-size: var(--text-xs);
+  }
+
+  .member-about {
+    font-size: var(--text-xs);
+  }
+
+  .members-header .logo-text {
+    font-size: var(--text-lg);
+  }
+}

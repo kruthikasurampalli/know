@@ -1,0 +1,48 @@
+{
+  "name": "portfolio-platform",
+  "description": "Production-grade open-source portfolio platform for team member discovery and portfolio exploration. Built with React 18, Vite, and modern web technologies.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Portfolio Contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/portfolio-project/portfolio"
+  },
+  "bugs": {
+    "url": "https://github.com/portfolio-project/portfolio/issues"
+  },
+  "homepage": "https://github.com/portfolio-project/portfolio#readme",
+  "keywords": [
+    "portfolio",
+    "team",
+    "discovery",
+    "react",
+    "vite",
+    "design-system",
+    "open-source"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.10.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.6",
+    "globals": "^17.12.0",
+    "terser": "^5.51.2",
+    "vite": "^8.3.0"
+  }
+}
